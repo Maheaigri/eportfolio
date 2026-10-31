@@ -9,15 +9,18 @@
 </head>
 <body>
 
-  <!-- Layout Principal en 2 colonnes -->
   <div class="portfolio-container">
 
-    <!-- Colonne de Gauche : Profil Fixe -->
+    <!-- Barre latérale fixe (Gauche) -->
     <aside class="sidebar">
       <div class="profile-card">
-        <div class="avatar-placeholder">
-          <i class="fa-solid fa-user-graduate"></i>
+        <!-- Emplacement photo de profil -->
+        <div class="avatar-container">
+          <i class="fa-solid fa-user-graduate avatar-icon"></i>
+          <!-- Quand tu auras ta photo, remplace la ligne au-dessus par : -->
+          <!-- <img src="photo.jpg" alt="Antoine Bousquet" class="avatar-img"> -->
         </div>
+        
         <h1>Antoine Bousquet</h1>
         <p class="tagline">Élève-Ingénieur 3EA</p>
         <p class="school"><i class="fa-solid fa-building-columns"></i> ENSEEIHT (N7) — Toulouse</p>
@@ -40,164 +43,181 @@
       </div>
     </aside>
 
-    <!-- Colonne de Droite : Contenu -->
+    <!-- Zone de contenu (Droite) -->
     <main class="main-content">
 
-      <!-- Section Welcome -->
+      <!-- Onglet 1: Welcome -->
       <section id="welcome" class="section-card">
         <span class="badge">Accueil</span>
         <h2>Welcome</h2>
         <p class="hero-text">
-          Bienvenue sur mon e-portfolio d'ingénieur. Actuellement étudiant au département <strong>3EA (Électronique, Énergie Électrique & Automatique)</strong> à l'ENSEEIHT, je regroupe ici mes projets, mes compétences et mes perspectives professionnelles.
+          Bienvenue sur mon e-portfolio d'ingénieur. Actuellement élève-ingénieur en première année au sein du département <strong>3EA (Électronique, Énergie Électrique & Automatique)</strong> à l'ENSEEIHT, je rassemble ici mes projets techniques, mes engagements et mes ambitions professionnelles.
         </p>
+        
         <div class="quick-stats">
           <div class="stat-box">
             <i class="fa-solid fa-bolt"></i>
             <div>
-              <strong>3EA</strong>
-              <span>Spécialité</span>
+              <strong>Spécialité 3EA</strong>
+              <span>Électronique, Énergie & Automatique</span>
             </div>
           </div>
           <div class="stat-box">
             <i class="fa-solid fa-graduation-cap"></i>
             <div>
-              <strong>ENSEEIHT</strong>
-              <span>Grande École</span>
+              <strong>ENSEEIHT (N7)</strong>
+              <span>Toulouse INP</span>
             </div>
           </div>
         </div>
       </section>
 
-     
-      <!-- Section Engineering Course -->
-<section id="engineering" class="section-card">
-  <span class="badge">Formation & Projets</span>
-  <h2>Engineering Course</h2>
-  <p class="hero-text">Projets d'ingénierie, travaux expérimentaux et modélisation physique réalisés au cours de mon parcours.</p>
-  
-  <div class="cards-grid">
-    <!-- Carte Projet TIPE -->
-    <div class="feature-card">
-      <div class="card-icon"><i class="fa-solid fa-arrows-spin"></i></div>
-      <h3>TIPE — Étude du Chaos Déterministe : Roue de Lorenz Hydraulique</h3>
-      <p class="project-subtitle"><em>Modélisation, expérimentation et analyse des systèmes chaotiques non-linéaires</em></p>
+      <!-- Onglet 2: Engineering Course -->
+      <section id="engineering" class="section-card">
+        <span class="badge">Formation & Projets</span>
+        <h2>Engineering Course</h2>
+        <p class="hero-text">Projets d'ingénierie, travaux expérimentaux et modélisation physique issus de mon parcours académique.</p>
 
-      <div class="star-grid">
-        <div class="star-item">
-          <strong><i class="fa-solid fa-location-dot"></i> Situation :</strong>
-          <p>Projet d'initiative personnelle encadré (TIPE) réalisé en classe préparatoire (MPI/5/2) à Rouen, portant sur la dynamique des fluides et le chaos déterministe.</p>
+        <div class="cards-grid">
+          <!-- Carte Projet TIPE -->
+          <div class="feature-card">
+            <div class="card-header-flex">
+              <div class="card-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+              <span class="status-tag success"><i class="fa-solid fa-check"></i> Projet CPGE Validé</span>
+            </div>
+            
+            <h3>TIPE — Étude du Chaos Déterministe : Roue de Lorenz Hydraulique</h3>
+            <p class="project-subtitle"><em>Modélisation, expérimentation et analyse des systèmes chaotiques non-linéaires</em></p>
+
+            <div class="star-grid">
+              <div class="star-item">
+                <strong><i class="fa-solid fa-location-dot"></i> Situation</strong>
+                <p>Projet d'initiative personnelle encadré (TIPE) réalisé en CPGE (filière MPI/5/2) à Rouen, focalisé sur la dynamique des fluides et les systèmes chaotiques.</p>
+              </div>
+
+              <div class="star-item">
+                <strong><i class="fa-solid fa-list-check"></i> Tâche</strong>
+                <p>Concevoir et fabriquer un banc expérimental de roue de Lorenz hydraulique pour reproduire physiquement les équations différentielles de Lorenz.</p>
+              </div>
+
+              <div class="star-item">
+                <strong><i class="fa-solid fa-gears"></i> Action</strong>
+                <p>
+                  • Conception du banc à augets alimentés en eau à débit contrôlé.<br>
+                  • Acquisition de données de rotation et transitions chaotiques.<br>
+                  • Simulation informatique sous Python (résolution numérique des équations différentielles couplées).<br>
+                  • Confrontation théorie / simulations / mesures expérimentales.
+                </p>
+              </div>
+
+              <div class="star-item">
+                <strong><i class="fa-solid fa-chart-line"></i> Résultat</strong>
+                <p>Mise en évidence expérimentale du comportement chaotique (attracteur de Lorenz) et rédaction de la Déclaration d'Objectifs (DOT/SCEI).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte Projets N7 3EA -->
+          <div class="feature-card margin-top">
+            <div class="card-header-flex">
+              <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+              <span class="status-tag pending"><i class="fa-solid fa-clock"></i> En cours (S5 / ENSEEIHT)</span>
+            </div>
+            <h3>Projets & Travaux Pratiques 3EA</h3>
+            <p>Conception de circuits électroniques, étude de la conversion d'énergie, asservissement de systèmes et traitement du signal au département 3EA.</p>
+          </div>
         </div>
+      </section>
 
-        <div class="star-item">
-          <strong><i class="fa-solid fa-list-check"></i> Tâche :</strong>
-          <p>Concevoir et fabriquer un système expérimental de roue de Lorenz hydraulique pour reproduire et analyser physiquement le système d'équations différentielles de Lorenz.</p>
-        </div>
-
-        <div class="star-item">
-          <strong><i class="fa-solid fa-gears"></i> Action :</strong>
-          <p>
-            • Conception du banc expérimental avec augets/gobelets alimentés en eau à débit contrôlé.<br>
-            • Acquisition de données (vitesse de rotation, oscillations, transitions chaotiques).<br>
-            • Modélisation mathématique et simulation informatique sous Python (résolution numérique des équations différentielles non-linéaires couplées).<br>
-            • Comparaison et confrontation entre la théorie, les simulations Python et les mesures expérimentales.
-          </p>
-        </div>
-
-        <div class="star-item">
-          <strong><i class="fa-solid fa-chart-line"></i> Résultat :</strong>
-          <p>Mise en évidence expérimentale du comportement chaotique et de la sensibilité aux conditions initiales (attracteur de Lorenz). Rédaction et soutenance du dossier officiel (DOT/SCEI).</p>
-        </div>
-      </div>
-
-      <span class="status-tag" style="background: rgba(56, 189, 248, 0.1); color: var(--accent-color);">
-        <i class="fa-solid fa-check"></i> Projet validé (Concours CPGE)
-      </span>
-    </div>
-
-    <!-- Carte Projets N7 3EA -->
-    <div class="feature-card" style="margin-top: 1.5rem;">
-      <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
-      <h3>Projets & Travaux Pratiques 3EA (ENSEEIHT)</h3>
-      <p>Projets de conception en électronique, conversion d'énergie, automatique et traitement du signal au sein du département 3EA de l'N7.</p>
-      <span class="status-tag"><i class="fa-solid fa-clock"></i> En cours de réalisation (S5/S6)</span>
-    </div>
-  </div>
-</section>
-      <!-- Section International Mobility -->
+      <!-- Onglet 3: International Mobility -->
       <section id="mobility" class="section-card">
         <span class="badge">International</span>
         <h2>International Mobility</h2>
         
         <div class="grid-2col">
           <div class="info-box">
-            <h3><i class="fa-solid fa-language"></i> Langues</h3>
+            <h3><i class="fa-solid fa-language"></i> Compétences Linguistiques</h3>
             <ul>
-              <li><strong>Anglais :</strong> Avancé (14/20 aux concours Mines-Ponts & CentraleSupélec)</li>
-              <li><strong>Espagnol :</strong> Débutant (apprentissage démarré récemment)</li>
+              <li><strong>Anglais :</strong> Niveau avancé (14/20 aux concours Mines-Ponts et CentraleSupélec)</li>
+              <li><strong>Espagnol :</strong> Niveau débutant (apprentissage démarré récemment)</li>
             </ul>
           </div>
           <div class="info-box">
-            <h3><i class="fa-solid fa-plane"></i> Projets d'études</h3>
+            <h3><i class="fa-solid fa-plane-departure"></i> Pistes de Mobilité</h3>
             <ul>
-              <li><strong>Double Diplôme :</strong> Georgia Tech (USA)</li>
-              <li><strong>Année de Césure :</strong> 2 stages de 6 mois dont un à l'international</li>
+              <li><strong>Double Diplôme :</strong> Projet de poursuite d'études à Georgia Tech (USA)</li>
+              <li><strong>Césure Internationale :</strong> Réalisation de deux stages de 6 mois, dont un à l'étranger</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Section Sustainability & Civic Engagement -->
+      <!-- Onglet 4: Sustainability & Civic Engagement -->
       <section id="sustainability" class="section-card">
         <span class="badge">Engagement</span>
         <h2>Sustainability & Civic Engagement</h2>
         <div class="info-box">
-          <h3><i class="fa-solid fa-users"></i> Vie Associative N7</h3>
-          <p>Membre actif de l'association <strong>CAN7</strong> (2ème plus grande association événementielle étudiante de France). Implication dans la logistique, la gestion et l'organisation sécurisée des événements de l'école.</p>
+          <h3><i class="fa-solid fa-users"></i> Vie Associative & Engagement Étudiant — CAN7</h3>
+          <p>
+            Membre actif de <strong>CAN7</strong>, l'association responsable de la vie étudiante et des événements à l'N7 (2ème plus grande association événementielle étudiante de France). Implication dans l'organisation logistique, la gestion d'équipe et la prévention lors des rassemblements majeurs.
+          </p>
         </div>
       </section>
 
-      <!-- Section Sport & Other Activities -->
+      <!-- Onglet 5: Sport & Other Activities -->
       <section id="sport" class="section-card">
         <span class="badge">Passions</span>
         <h2>Sport & Other Activities</h2>
         <div class="grid-2col">
           <div class="info-box">
-            <h3><i class="fa-solid fa-dumbbell"></i> Sports</h3>
+            <h3><i class="fa-solid fa-dumbbell"></i> Pratique Sportive</h3>
             <ul>
-              <li><strong>Musculation :</strong> 5 à 6 séances par semaine</li>
-              <li><strong>Course à pied :</strong> 1 séance par semaine</li>
+              <li><strong>Musculation :</strong> Entraînement régulier et intensif (5 à 6 séances par semaine)</li>
+              <li><strong>Course à pied :</strong> Endurance et travail foncier (1 séance par semaine)</li>
             </ul>
           </div>
           <div class="info-box">
-            <h3><i class="fa-solid fa-compact-disc"></i> Loisirs</h3>
+            <h3><i class="fa-solid fa-compact-disc"></i> Loisirs & Passions</h3>
             <ul>
-              <li><strong>Mix / DJing :</strong> Pratique et technique audio</li>
-              <li><strong>Lecture :</strong> Littérature et essais</li>
+              <li><strong>Mix / DJing :</strong> Pratique de la musique électronique et techniques de mixage audio</li>
+              <li><strong>Lecture :</strong> Essais, ouvrages scientifiques et littérature</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Section Career Development -->
+      <!-- Onglet 6: Career Development -->
       <section id="career" class="section-card">
         <span class="badge">Carrière</span>
         <h2>Career Development</h2>
         
+        <!-- Emplacement Vidéo Pitch -->
         <div class="video-container">
           <div class="video-placeholder">
             <i class="fa-solid fa-video"></i>
-            <h3>Vidéo UVP (Elevator Pitch en anglais)</h3>
-            <p>La présentation vidéo de ma Unique Value Proposal sera publiée ici très prochainement.</p>
+            <h3>Vidéo UVP (Elevator Pitch — 2-3 min en Anglais)</h3>
+            <p><em>En cours de finalisation — La présentation intégrera mon Unique Value Proposal, mon analyse de 3 profils modèles et mes projets de mobilité internationale.</em></p>
           </div>
         </div>
 
-        <div class="contact-box">
-          <h3><i class="fa-solid fa-address-card"></i> Mes Liens & Contacts</h3>
-          <ul class="contact-list">
-            <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/bousquet-antoine-a207343b2/" target="_blank">Profil LinkedIn</a></li>
-            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:antoine.bousquet2@etu.toulouse-inp.fr">antoine.bousquet2@etu.toulouse-inp.fr</a></li>
-            <li><i class="fa-solid fa-file-pdf"></i> CVs (FR / EN) — <em>En cours de mise en ligne</em></li>
-          </ul>
+        <!-- Emplacement CVs & Réseaux -->
+        <div class="grid-2col">
+          <div class="info-box">
+            <h3><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.8rem;">Documents bilingues téléchargeables :</p>
+            <div class="buttons-group">
+              <span class="btn-disabled"><i class="fa-solid fa-download"></i> CV Français (Bientôt)</span>
+              <span class="btn-disabled"><i class="fa-solid fa-download"></i> CV English (Soon)</span>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <h3><i class="fa-solid fa-address-card"></i> Réseaux & Contacts</h3>
+            <ul class="contact-list">
+              <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/bousquet-antoine-a207343b2/" target="_blank">Profil LinkedIn</a></li>
+              <li><i class="fa-solid fa-envelope"></i> <a href="mailto:antoine.bousquet2@etu.toulouse-inp.fr">antoine.bousquet2@etu.toulouse-inp.fr</a></li>
+            </ul>
+          </div>
         </div>
       </section>
 
