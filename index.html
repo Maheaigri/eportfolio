@@ -14,15 +14,15 @@
     <!-- Barre latérale fixe (Gauche) -->
     <aside class="sidebar">
       <div class="profile-card">
-        <!-- Emplacement photo de profil -->
         <div class="avatar-container">
           <i class="fa-solid fa-user-graduate avatar-icon"></i>
-          <!-- Quand tu auras ta photo, remplace la ligne au-dessus par : -->
-          <!-- <img src="photo.jpg" alt="Antoine Bousquet" class="avatar-img"> -->
         </div>
         
         <h1>Antoine Bousquet</h1>
-        <p class="tagline">Élève-Ingénieur 3EA</p>
+        <p class="tagline">
+          <span class="lang-fr">Élève-Ingénieur 3EA</span>
+          <span class="lang-en">3EA Engineering Student</span>
+        </p>
         <p class="school"><i class="fa-solid fa-building-columns"></i> ENSEEIHT (N7) — Toulouse</p>
 
         <div class="social-links">
@@ -40,8 +40,9 @@
             <li><a href="#career"><i class="fa-solid fa-briefcase"></i> Career Development</a></li>
           </ul>
         </nav>
+        
         <button id="langToggle" class="lang-toggle-btn">
-        <i class="fa-solid fa-language"></i> Switch to English
+          <i class="fa-solid fa-language"></i> Switch to English
         </button>
       </div>
     </aside>
@@ -51,18 +52,26 @@
 
       <!-- Onglet 1: Welcome -->
       <section id="welcome" class="section-card">
-        <span class="badge">Accueil</span>
+        <span class="badge">
+          <span class="lang-fr">Accueil</span>
+          <span class="lang-en">Home</span>
+        </span>
         <h2>Welcome</h2>
-        <p class="hero-text">
+        <p class="hero-text lang-fr">
           Bienvenue sur mon e-portfolio d'ingénieur. Actuellement élève-ingénieur en première année au sein du département <strong>3EA (Électronique, Énergie Électrique & Automatique)</strong> à l'ENSEEIHT, je rassemble ici mes projets techniques, mes engagements et mes ambitions professionnelles. Je souhaite évoluer dans des secteurs à forts enjeux économiques et technologiques.
+        </p>
+        <p class="hero-text lang-en">
+          Welcome to my engineering e-portfolio. Currently a first-year engineering student in the <strong>3EA (Electronics, Electrical Energy & Control)</strong> department at ENSEEIHT, I gather here my technical projects, commitments, and professional ambitions. I aim to work in sectors with high economic and technological stakes.
         </p>
         
         <div class="quick-stats">
           <div class="stat-box">
             <i class="fa-solid fa-bolt"></i>
             <div>
-              <strong>Spécialité 3EA</strong>
-              <span>Électronique, Énergie & Automatique</span>
+              <strong class="lang-fr">Spécialité 3EA</strong>
+              <strong class="lang-en">3EA Major</strong>
+              <span class="lang-fr">Électronique, Énergie & Automatique</span>
+              <span class="lang-en">Electronics, Energy & Control</span>
             </div>
           </div>
           <div class="stat-box">
@@ -77,19 +86,29 @@
 
       <!-- Onglet 2: Engineering Course -->
       <section id="engineering" class="section-card">
-        <span class="badge">Formation & Projets</span>
+        <span class="badge">
+          <span class="lang-fr">Formation & Projets</span>
+          <span class="lang-en">Education & Projects</span>
+        </span>
         <h2>Engineering Course</h2>
-        <p class="hero-text">Projets d'ingénierie, travaux expérimentaux et compétences en programmation issus de mon parcours académique.</p>
+        <p class="hero-text lang-fr">Projets d'ingénierie, travaux expérimentaux et compétences en programmation issus de mon parcours académique.</p>
+        <p class="hero-text lang-en">Engineering projects, experimental work, and programming skills from my academic background.</p>
         
          <div class="info-box margin-top" style="margin-bottom: 1.5rem;">
-          <h3><i class="fa-solid fa-code"></i> Compétences en Programmation (CPGE MPI)</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">
+          <h3 class="lang-fr"><i class="fa-solid fa-code"></i> Compétences en Programmation (CPGE MPI)</h3>
+          <h3 class="lang-en"><i class="fa-solid fa-code"></i> Programming Skills (CPGE MPI)</h3>
+          
+          <p class="lang-fr" style="font-size: 0.9rem; color: var(--text-muted);">
             Solide formation en algorithmique et programmation acquise en filière Mathématiques, Physique et Informatique (MPI). Développe des capacités d'analyse, de rigueur et de résolution de problèmes complexes (Soft Skills).
           </p>
+          <p class="lang-en" style="font-size: 0.9rem; color: var(--text-muted);">
+            Solid background in algorithms and programming acquired in the Mathematics, Physics, and Computer Science (MPI) preparatory class. Develops analytical skills, rigor, and complex problem-solving abilities (Soft Skills).
+          </p>
+          
           <div style="margin-top: 0.8rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <span class="badge" style="text-transform: none; background: rgba(56, 189, 248, 0.2);">Langage C</span>
+            <span class="badge" style="text-transform: none; background: rgba(56, 189, 248, 0.2);">C</span>
             <span class="badge" style="text-transform: none; background: rgba(56, 189, 248, 0.2);">OCaml</span>
-            <span class="badge" style="text-transform: none; background: rgba(56, 189, 248, 0.2);">Algorithmique</span>
+            <span class="badge" style="text-transform: none; background: rgba(56, 189, 248, 0.2);"><span class="lang-fr">Algorithmique</span><span class="lang-en">Algorithms</span></span>
           </div>
         </div>
 
@@ -98,23 +117,34 @@
           <div class="feature-card">
             <div class="card-header-flex">
               <div class="card-icon"><i class="fa-solid fa-arrows-spin"></i></div>
-              <span class="status-tag success"><i class="fa-solid fa-check"></i> Projet CPGE Validé</span>
+              <span class="status-tag success">
+                <i class="fa-solid fa-check"></i> 
+                <span class="lang-fr">Projet CPGE Validé</span>
+                <span class="lang-en">Validated Project</span>
+              </span>
             </div>
             
-            <h3>TIPE — Étude du Chaos Déterministe : Roue de Lorenz Hydraulique</h3>
-            <p class="project-subtitle"><em>Modélisation, expérimentation et analyse des systèmes chaotiques non-linéaires</em></p>
-            <img src="roue-lorenz.jpeg" alt="Construction du banc expérimental de la roue de Lorenz" class="project-image">
-            <div class="star-grid">
+            <h3 class="lang-fr">TIPE — Étude du Chaos Déterministe : Roue de Lorenz Hydraulique</h3>
+            <h3 class="lang-en">TIPE — Study of Deterministic Chaos: Hydraulic Lorenz Wheel</h3>
+            
+            <p class="project-subtitle lang-fr"><em>Modélisation, expérimentation et analyse des systèmes chaotiques non-linéaires</em></p>
+            <p class="project-subtitle lang-en"><em>Modeling, experimentation, and analysis of non-linear chaotic systems</em></p>
+
+            <button class="view-img-btn" onclick="openModal()">
+              <i class="fa-solid fa-camera"></i> 
+              <span class="lang-fr">Voir la photo du montage</span>
+              <span class="lang-en">View assembly photo</span>
+            </button>
+
+            <div class="star-grid lang-fr">
               <div class="star-item">
                 <strong><i class="fa-solid fa-location-dot"></i> Situation</strong>
                 <p>Projet d'initiative personnelle encadré (TIPE) réalisé en CPGE (filière MPI/5/2) à Rouen, focalisé sur la dynamique des fluides et les systèmes chaotiques.</p>
               </div>
-
               <div class="star-item">
                 <strong><i class="fa-solid fa-list-check"></i> Tâche</strong>
                 <p>Concevoir et fabriquer un banc expérimental de roue de Lorenz hydraulique pour reproduire physiquement les équations différentielles de Lorenz.</p>
               </div>
-
               <div class="star-item">
                 <strong><i class="fa-solid fa-gears"></i> Action</strong>
                 <p>
@@ -124,10 +154,33 @@
                   • Confrontation théorie / simulations / mesures expérimentales.
                 </p>
               </div>
-
               <div class="star-item">
                 <strong><i class="fa-solid fa-chart-line"></i> Résultat</strong>
                 <p>Mise en évidence expérimentale du comportement chaotique (attracteur de Lorenz) et rédaction de la Déclaration d'Objectifs (DOT/SCEI).</p>
+              </div>
+            </div>
+
+            <div class="star-grid lang-en">
+              <div class="star-item">
+                <strong><i class="fa-solid fa-location-dot"></i> Situation</strong>
+                <p>Personal initiative project (TIPE) completed during CPGE (MPI/5/2 track) in Rouen, focusing on fluid dynamics and chaotic systems.</p>
+              </div>
+              <div class="star-item">
+                <strong><i class="fa-solid fa-list-check"></i> Task</strong>
+                <p>Design and build an experimental hydraulic Lorenz wheel to physically replicate the Lorenz differential equations.</p>
+              </div>
+              <div class="star-item">
+                <strong><i class="fa-solid fa-gears"></i> Action</strong>
+                <p>
+                  • Designed the water-fed bucket rig with controlled flow.<br>
+                  • Acquired rotation data and analyzed chaotic transitions.<br>
+                  • Ran computer simulations in Python (numerical resolution of coupled differential equations).<br>
+                  • Compared theory, simulations, and experimental measurements.
+                </p>
+              </div>
+              <div class="star-item">
+                <strong><i class="fa-solid fa-chart-line"></i> Result</strong>
+                <p>Experimental demonstration of chaotic behavior (Lorenz attractor) and official drafting of the Objectives Declaration (DOT/SCEI).</p>
               </div>
             </div>
           </div>
@@ -136,10 +189,17 @@
           <div class="feature-card margin-top">
             <div class="card-header-flex">
               <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
-              <span class="status-tag pending"><i class="fa-solid fa-clock"></i> En cours (S5 / ENSEEIHT)</span>
+              <span class="status-tag pending">
+                <i class="fa-solid fa-clock"></i> 
+                <span class="lang-fr">En cours (S5 / ENSEEIHT)</span>
+                <span class="lang-en">In progress (S5 / ENSEEIHT)</span>
+              </span>
             </div>
-            <h3>Projets & Travaux Pratiques 3EA</h3>
-            <p>Conception de circuits électroniques, étude de la conversion d'énergie, asservissement de systèmes et traitement du signal au département 3EA.</p>
+            <h3 class="lang-fr">Projets & Travaux Pratiques 3EA</h3>
+            <h3 class="lang-en">3EA Projects & Practicals</h3>
+            
+            <p class="lang-fr">Conception de circuits électroniques, étude de la conversion d'énergie, asservissement de systèmes et traitement du signal au département 3EA.</p>
+            <p class="lang-en">Design of electronic circuits, study of energy conversion, system control, and signal processing in the 3EA department.</p>
           </div>
         </div>
       </section>
@@ -151,17 +211,28 @@
         
         <div class="grid-2col">
           <div class="info-box">
-            <h3><i class="fa-solid fa-language"></i> Compétences Linguistiques</h3>
-            <ul>
+            <h3 class="lang-fr"><i class="fa-solid fa-language"></i> Compétences Linguistiques</h3>
+            <h3 class="lang-en"><i class="fa-solid fa-language"></i> Language Skills</h3>
+            <ul class="lang-fr">
               <li><strong>Anglais :</strong> Niveau avancé (14/20 aux concours Mines-Ponts et CentraleSupélec)</li>
               <li><strong>Espagnol :</strong> Niveau débutant (apprentissage démarré récemment)</li>
             </ul>
+            <ul class="lang-en">
+              <li><strong>English:</strong> Advanced level (14/20 on Mines-Ponts and CentraleSupélec national exams)</li>
+              <li><strong>Spanish:</strong> Beginner level (recently started learning)</li>
+            </ul>
           </div>
+          
           <div class="info-box">
-            <h3><i class="fa-solid fa-plane-departure"></i> Pistes de Mobilité</h3>
-            <ul>
+            <h3 class="lang-fr"><i class="fa-solid fa-plane-departure"></i> Pistes de Mobilité</h3>
+            <h3 class="lang-en"><i class="fa-solid fa-plane-departure"></i> Mobility Projects</h3>
+            <ul class="lang-fr">
               <li><strong>Double Diplôme :</strong> Projet de poursuite d'études à Georgia Tech (USA)</li>
               <li><strong>Césure Internationale :</strong> Réalisation de deux stages de 6 mois, dont un à l'étranger</li>
+            </ul>
+            <ul class="lang-en">
+              <li><strong>Dual Degree:</strong> Project to pursue studies at Georgia Tech (USA)</li>
+              <li><strong>Gap Year:</strong> Planning two 6-month internships, including one abroad</li>
             </ul>
           </div>
         </div>
@@ -169,33 +240,54 @@
 
       <!-- Onglet 4: Sustainability & Civic Engagement -->
       <section id="sustainability" class="section-card">
-        <span class="badge">Engagement</span>
+        <span class="badge">
+          <span class="lang-fr">Engagement</span>
+          <span class="lang-en">Civic Engagement</span>
+        </span>
         <h2>Sustainability & Civic Engagement</h2>
         <div class="info-box">
-          <h3><i class="fa-solid fa-users"></i> Vie Associative & Engagement Étudiant — CAN7</h3>
-          <p>
+          <h3 class="lang-fr"><i class="fa-solid fa-users"></i> Vie Associative & Engagement Étudiant — CAN7</h3>
+          <h3 class="lang-en"><i class="fa-solid fa-users"></i> Student Association & Engagement — CAN7</h3>
+          
+          <p class="lang-fr">
             Membre actif de <strong>CAN7</strong>, l'association responsable de la vie étudiante et des événements à l'N7 (2ème plus grande association événementielle étudiante de France). Implication dans l'organisation logistique, la gestion d'équipe et la prévention lors des rassemblements majeurs. Cet engagement me permet de développer un esprit d'équipe, du leadership et une forte capacité d'adaptation (Soft Skills).
+          </p>
+          <p class="lang-en">
+            Active member of <strong>CAN7</strong>, the association responsible for student life and events at N7 (the 2nd largest student event association in France). Involved in logistics organization, team management, and prevention during major gatherings. This engagement allows me to develop team spirit, leadership, and strong adaptability (Soft Skills).
           </p>
         </div>
       </section>
 
       <!-- Onglet 5: Sport & Other Activities -->
       <section id="sport" class="section-card">
-        <span class="badge">Passions</span>
+        <span class="badge">
+          <span class="lang-fr">Passions</span>
+          <span class="lang-en">Hobbies</span>
+        </span>
         <h2>Sport & Other Activities</h2>
         <div class="grid-2col">
           <div class="info-box">
-            <h3><i class="fa-solid fa-dumbbell"></i> Pratique Sportive</h3>
-            <ul>
+            <h3 class="lang-fr"><i class="fa-solid fa-dumbbell"></i> Pratique Sportive</h3>
+            <h3 class="lang-en"><i class="fa-solid fa-dumbbell"></i> Sports</h3>
+            <ul class="lang-fr">
               <li><strong>Musculation :</strong> 5 à 6 séances par semaine. Exige discipline, résilience et constance (Soft Skills).</li>
               <li><strong>Course à pied :</strong> 1 séance par semaine</li>
             </ul>
+            <ul class="lang-en">
+              <li><strong>Weightlifting:</strong> 5 to 6 sessions per week. Requires discipline, resilience, and consistency (Soft Skills).</li>
+              <li><strong>Running:</strong> 1 session per week</li>
+            </ul>
           </div>
           <div class="info-box">
-            <h3><i class="fa-solid fa-compact-disc"></i> Loisirs & Passions</h3>
-            <ul>
+            <h3 class="lang-fr"><i class="fa-solid fa-compact-disc"></i> Loisirs & Passions</h3>
+            <h3 class="lang-en"><i class="fa-solid fa-compact-disc"></i> Hobbies</h3>
+            <ul class="lang-fr">
               <li><strong>Mix / DJing :</strong> House, Rap fr, EDM, R&B, Afro. Sollicite la créativité et la concentration.</li>
               <li><strong>Lecture :</strong> Essais, ouvrages scientifiques et littérature</li>
+            </ul>
+            <ul class="lang-en">
+              <li><strong>Mix / DJing:</strong> House, French Rap, EDM, R&B, Afro. Stimulates creativity and focus.</li>
+              <li><strong>Reading:</strong> Essays, scientific literature, and novels</li>
             </ul>
           </div>
         </div>
@@ -203,19 +295,29 @@
 
       <!-- Onglet 6: Career Development -->
       <section id="career" class="section-card">
-        <span class="badge">Carrière</span>
+        <span class="badge">
+          <span class="lang-fr">Carrière</span>
+          <span class="lang-en">Career</span>
+        </span>
         <h2>Career Development</h2>
         
         <div class="info-box margin-top" style="margin-bottom: 1.5rem;">
-          <h3><i class="fa-solid fa-bullseye"></i> Objectifs Professionnels</h3>
-          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5;">
+          <h3 class="lang-fr"><i class="fa-solid fa-bullseye"></i> Objectifs Professionnels</h3>
+          <h3 class="lang-en"><i class="fa-solid fa-bullseye"></i> Career Goals</h3>
+          
+          <p class="lang-fr" style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5;">
             Mon ambition est d'intégrer des secteurs à forts enjeux stratégiques et économiques, où l'innovation est motivée par des investissements importants. Je suis particulièrement attiré par les <strong>systèmes embarqués</strong>, l'<strong>électronique de puissance</strong> et les <strong>systèmes électriques aéronautiques</strong>, pour être au cœur de l'action économique et technologique.
+          </p>
+          <p class="lang-en" style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5;">
+            My ambition is to join sectors with high strategic and economic stakes, where innovation is driven by significant investments. I am particularly drawn to <strong>embedded systems</strong>, <strong>power electronics</strong>, and <strong>aeronautical electrical systems</strong>, to be at the heart of economic and technological action.
           </p>
         </div>
         
         <div class="info-box margin-top" style="margin-bottom: 1.5rem;">
-          <h3><i class="fa-solid fa-user-tie"></i> Analyses de Profils Modèles (MyJobGlasses)</h3>
-          <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem;">
+          <h3 class="lang-fr"><i class="fa-solid fa-user-tie"></i> Analyses de Profils Modèles (MyJobGlasses)</h3>
+          <h3 class="lang-en"><i class="fa-solid fa-user-tie"></i> Role Model Profiles (MyJobGlasses)</h3>
+          
+          <ul class="lang-fr" style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem;">
             <li>
               <strong>Jérôme — Responsable Pricing @ Airbus :</strong> 
               Son parcours (DUT Physique, IAE, École des Mines) illustre la force d'une double compétence technico-commerciale. Ses missions soulignent l'importance des négociations internationales (Chine) et du contact humain avec les fournisseurs dans un secteur à fort enjeu.
@@ -225,32 +327,50 @@
               Son évolution (DUT, Thales, DGA) démontre l'intérêt d'une expertise technique pointue (fréquences radar) appliquée à des secteurs stratégiques comme la défense et l'aéronautique.
             </li>
           </ul>
+          <ul class="lang-en" style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem;">
+            <li>
+              <strong>Jérôme — Pricing Manager @ Airbus:</strong> 
+              His background (Physics DUT, IAE, École des Mines) illustrates the strength of dual technical and commercial skills. His missions highlight the importance of international negotiations (China) and human contact with suppliers in a high-stakes sector.
+            </li>
+            <li style="margin-top: 0.8rem;">
+              <strong>Rémi — Radar Systems Engineer @ DGA (ex-Thales):</strong> 
+              His career path (DUT, Thales, DGA) demonstrates the value of specialized technical expertise (radar frequencies) applied to strategic sectors like defense and aeronautics.
+            </li>
+          </ul>
         </div>
         
         <!-- Emplacement Vidéo Pitch -->
         <div class="video-container">
           <div class="video-placeholder">
             <i class="fa-solid fa-video"></i>
-            <h3>Vidéo UVP (Elevator Pitch — 2-3 min en Anglais)</h3>
-            <p><em>En cours de finalisation</em></p>
+            <h3 class="lang-fr">Vidéo UVP (Elevator Pitch — 2-3 min en Anglais)</h3>
+            <h3 class="lang-en">UVP Video (Elevator Pitch — 2-3 min in English)</h3>
+            <p class="lang-fr"><em>En cours de finalisation</em></p>
+            <p class="lang-en"><em>Work in progress</em></p>
           </div>
         </div>
 
         <!-- Emplacement CVs & Réseaux -->
         <div class="grid-2col">
           <div class="info-box">
-            <h3><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</h3>
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.8rem;">Documents bilingues téléchargeables :</p>
+            <h3 class="lang-fr"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</h3>
+            <h3 class="lang-en"><i class="fa-solid fa-file-pdf"></i> Resumes</h3>
+            
+            <p class="lang-fr" style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.8rem;">Documents bilingues téléchargeables :</p>
+            <p class="lang-en" style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.8rem;">Downloadable bilingual documents:</p>
+            
             <div class="buttons-group">
-              <span class="btn-disabled"><i class="fa-solid fa-download"></i> CV Français (Bientôt)</span>
-              <span class="btn-disabled"><i class="fa-solid fa-download"></i> CV English (Soon)</span>
+              <span class="btn-disabled"><i class="fa-solid fa-download"></i> <span class="lang-fr">CV Français (Bientôt)</span><span class="lang-en">French CV (Soon)</span></span>
+              <span class="btn-disabled"><i class="fa-solid fa-download"></i> <span class="lang-fr">CV Anglais (Bientôt)</span><span class="lang-en">English CV (Soon)</span></span>
             </div>
           </div>
 
           <div class="info-box">
-            <h3><i class="fa-solid fa-address-card"></i> Réseaux & Contacts</h3>
+            <h3 class="lang-fr"><i class="fa-solid fa-address-card"></i> Réseaux & Contacts</h3>
+            <h3 class="lang-en"><i class="fa-solid fa-address-card"></i> Links & Contacts</h3>
+            
             <ul class="contact-list">
-              <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/bousquet-antoine-a207343b2/" target="_blank">Profil LinkedIn</a></li>
+              <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/bousquet-antoine-a207343b2/" target="_blank">LinkedIn</a></li>
               <li><i class="fa-solid fa-envelope"></i> <a href="mailto:antoine.bousquet2@etu.toulouse-inp.fr">antoine.bousquet2@etu.toulouse-inp.fr</a></li>
             </ul>
           </div>
@@ -258,19 +378,46 @@
       </section>
 
     </main>
-
   </div>
-<script>
-  const toggleBtn = document.getElementById('langToggle');
-  let isEnglish = false;
-  
-  toggleBtn.addEventListener('click', () => {
-    isEnglish = !isEnglish;
-    toggleBtn.innerHTML = isEnglish ? '<i class="fa-solid fa-language"></i> Passer en Français' : '<i class="fa-solid fa-language"></i> Switch to English';
+
+  <!-- Fenêtre Modale pour l'image -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg" src="roue-lorenz.jpg" alt="Roue de Lorenz">
+  </div>
+
+  <script>
+    // Script pour le changement de langue
+    const toggleBtn = document.getElementById('langToggle');
+    let isEnglish = false;
     
-    document.querySelectorAll('.lang-fr').forEach(el => el.style.display = isEnglish ? 'none' : '');
-    document.querySelectorAll('.lang-en').forEach(el => el.style.display = isEnglish ? '' : 'none');
-  });
-</script>
+    // Initialisation
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+    
+    toggleBtn.addEventListener('click', () => {
+      isEnglish = !isEnglish;
+      toggleBtn.innerHTML = isEnglish ? '<i class="fa-solid fa-language"></i> Passer en Français' : '<i class="fa-solid fa-language"></i> Switch to English';
+      
+      document.querySelectorAll('.lang-fr').forEach(el => el.style.display = isEnglish ? 'none' : '');
+      document.querySelectorAll('.lang-en').forEach(el => el.style.display = isEnglish ? '' : 'none');
+    });
+
+    // Script pour la fenêtre modale de l'image
+    function openModal() {
+      document.getElementById('imageModal').style.display = 'flex';
+    }
+    
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+      var modal = document.getElementById('imageModal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 </html>
