@@ -40,6 +40,9 @@
             <li><a href="#career"><i class="fa-solid fa-briefcase"></i> Career Development</a></li>
           </ul>
         </nav>
+        <button id="langToggle" class="lang-toggle-btn">
+        <i class="fa-solid fa-language"></i> Switch to English
+        </button>
       </div>
     </aside>
 
@@ -257,6 +260,17 @@
     </main>
 
   </div>
-
+<script>
+  const toggleBtn = document.getElementById('langToggle');
+  let isEnglish = false;
+  
+  toggleBtn.addEventListener('click', () => {
+    isEnglish = !isEnglish;
+    toggleBtn.innerHTML = isEnglish ? '<i class="fa-solid fa-language"></i> Passer en Français' : '<i class="fa-solid fa-language"></i> Switch to English';
+    
+    document.querySelectorAll('.lang-fr').forEach(el => el.style.display = isEnglish ? 'none' : '');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = isEnglish ? '' : 'none');
+  });
+</script>
 </body>
 </html>
