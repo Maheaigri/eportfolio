@@ -336,3 +336,43 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Style specifique pour la methode STAR */
+.star-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.2rem 0;
+  text-align: left;
+}
+
+.star-item {
+  background: rgba(15, 23, 42, 0.6);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.star-item strong {
+  color: var(--accent-color);
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.92rem;
+}
+
+.star-item p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.project-subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .star-grid {
+    grid-template-columns: 1fr;
+  }
+}
