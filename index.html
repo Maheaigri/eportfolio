@@ -3,137 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Portfolio - Antoine Bousquet</title>
+  <title>Antoine Bousquet | E-Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">Antoine Bousquet</div>
-    <ul class="nav-links">
-      <li><a href="#welcome">Welcome</a></li>
-      <li><a href="#engineering">Engineering Course</a></li>
-      <li><a href="#mobility">International Mobility</a></li>
-      <li><a href="#sustainability">Sustainability</a></li>
-      <li><a href="#sport">Sport & Activities</a></li>
-      <li><a href="#career">Career Development</a></li>
-    </ul>
-  </nav>
+  <!-- Layout Principal en 2 colonnes -->
+  <div class="portfolio-container">
 
-  <!-- Contenu Principal -->
-  <main class="content">
-
-    <!-- Onglet 1: Welcome -->
-    <section id="welcome" class="card">
-      <h1>Welcome</h1>
-      <div class="profile-header">
-        <div>
-          <h2>Antoine Bousquet</h2>
-          <p class="subtitle">Élève-Ingénieur en 3EA (Électronique, Énergie Électrique & Automatique)</p>
-          <p class="institution">ENSEEIHT (N7) — Toulouse, France</p>
-          <p class="intro-text">
-            Bienvenue sur mon e-portfolio. Actuellement en formation d'ingénieur à l'ENSEEIHT, je partage ici mon parcours, mes projets techniques, mes engagements et mes ambitions professionnelles.
-          </p>
+    <!-- Colonne de Gauche : Profil Fixe -->
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="avatar-placeholder">
+          <i class="fa-solid fa-user-graduate"></i>
         </div>
-      </div>
-    </section>
+        <h1>Antoine Bousquet</h1>
+        <p class="tagline">Élève-Ingénieur 3EA</p>
+        <p class="school"><i class="fa-solid fa-building-columns"></i> ENSEEIHT (N7) — Toulouse</p>
 
-    <!-- Onglet 2: Engineering Course -->
-    <section id="engineering" class="card">
-      <h2>Engineering Course</h2>
-      <p>Projets techniques et réalisations académiques du département 3EA à l'ENSEEIHT.</p>
-      
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Projets & Travaux Pratiques 3EA</h3>
-          <p><em>Rapprochement théorie-pratique autour des systèmes électroniques, de la conversion d'énergie et de l'automatique.</em></p>
-          <p>Contenus et fiches de projets en cours d'enrichissement.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/bousquet-antoine-a207343b2/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:antoine.bousquet2@etu.toulouse-inp.fr" title="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
-      </div>
-    </section>
 
-    <!-- Onglet 3: International Mobility -->
-    <section id="mobility" class="card">
-      <h2>International Mobility</h2>
-      
-      <div class="info-block">
-        <h3>Compétences Linguistiques</h3>
-        <ul>
-          <li><strong>Anglais :</strong> Niveau avancé (14/20 aux concours Mines-Ponts et CentraleSupélec)</li>
-          <li><strong>Espagnol :</strong> Niveau débutant (apprentissage démarré depuis 2 mois)</li>
-        </ul>
-      </div>
-
-      <div class="info-block">
-        <h3>Pistes de Poursuite d'Études & Mobilité</h3>
-        <ul>
-          <li><strong>Double Diplôme :</strong> Projet de poursuite d'études à Georgia Tech (USA)</li>
-          <li><strong>Année de Césure :</strong> Réalisation de deux stages de 6 mois, dont un à l'international</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Onglet 4: Sustainability & Civic Engagement -->
-    <section id="sustainability" class="card">
-      <h2>Sustainability & Civic Engagement</h2>
-      <p>Initiatives, projets citoyens et engagements associatifs favorisant le développement durable et la vie étudiante.</p>
-      
-      <div class="info-block">
-        <h3>Vie Associative & Engagement Éco-Responsable</h3>
-        <ul>
-          <li>Membre actif de l'association <strong>CAN7</strong> (2ème plus grande association d'événements étudiants de France)</li>
-          <li>Participation à l'organisation sécurisée et responsable des rassemblements et événements de l'école</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Onglet 5: Sport & Other Activities -->
-    <section id="sport" class="card">
-      <h2>Sport & Other Activities</h2>
-      
-      <div class="activities-grid">
-        <div class="activity-card">
-          <h3>Pratique Sportive</h3>
+        <nav class="sidebar-nav">
           <ul>
-            <li><strong>Musculation :</strong> Entraînement régulier (5 à 6 séances par semaine)</li>
-            <li><strong>Course à pied :</strong> Pratique hebdomadaire (1 séance par semaine)</li>
+            <li><a href="#welcome"><i class="fa-solid fa-house"></i> Welcome</a></li>
+            <li><a href="#engineering"><i class="fa-solid fa-microchip"></i> Engineering Course</a></li>
+            <li><a href="#mobility"><i class="fa-solid fa-globe"></i> International Mobility</a></li>
+            <li><a href="#sustainability"><i class="fa-solid fa-leaf"></i> Sustainability</a></li>
+            <li><a href="#sport"><i class="fa-solid fa-person-running"></i> Sport & Activities</a></li>
+            <li><a href="#career"><i class="fa-solid fa-briefcase"></i> Career Development</a></li>
           </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Colonne de Droite : Contenu -->
+    <main class="main-content">
+
+      <!-- Section Welcome -->
+      <section id="welcome" class="section-card">
+        <span class="badge">Accueil</span>
+        <h2>Welcome</h2>
+        <p class="hero-text">
+          Bienvenue sur mon e-portfolio d'ingénieur. Actuellement étudiant au département <strong>3EA (Électronique, Énergie Électrique & Automatique)</strong> à l'ENSEEIHT, je regroupe ici mes projets, mes compétences et mes perspectives professionnelles.
+        </p>
+        <div class="quick-stats">
+          <div class="stat-box">
+            <i class="fa-solid fa-bolt"></i>
+            <div>
+              <strong>3EA</strong>
+              <span>Spécialité</span>
+            </div>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <strong>ENSEEIHT</strong>
+              <span>Grande École</span>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- Section Engineering Course -->
+      <section id="engineering" class="section-card">
+        <span class="badge">Formation</span>
+        <h2>Engineering Course</h2>
+        <p>Travaux pratiques, projets de conception et réalisations au sein du département 3EA.</p>
         
-        <div class="activity-card">
-          <h3>Centres d'Intérêt & Passions</h3>
-          <ul>
-            <li><strong>Mix / DJing :</strong> Création musicale et technique de mixage audio</li>
-            <li><strong>Lecture :</strong> Œuvres littéraires, essais et ouvrages spécialisés</li>
+        <div class="cards-grid">
+          <div class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3>Projets & TP 3EA</h3>
+            <p>Application pratique des concepts en électronique, conversion de puissance et contrôle de systèmes.</p>
+            <span class="status-tag">En cours d'enrichissement</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section International Mobility -->
+      <section id="mobility" class="section-card">
+        <span class="badge">International</span>
+        <h2>International Mobility</h2>
+        
+        <div class="grid-2col">
+          <div class="info-box">
+            <h3><i class="fa-solid fa-language"></i> Langues</h3>
+            <ul>
+              <li><strong>Anglais :</strong> Avancé (14/20 aux concours Mines-Ponts & CentraleSupélec)</li>
+              <li><strong>Espagnol :</strong> Débutant (apprentissage démarré récemment)</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h3><i class="fa-solid fa-plane"></i> Projets d'études</h3>
+            <ul>
+              <li><strong>Double Diplôme :</strong> Georgia Tech (USA)</li>
+              <li><strong>Année de Césure :</strong> 2 stages de 6 mois dont un à l'international</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Sustainability & Civic Engagement -->
+      <section id="sustainability" class="section-card">
+        <span class="badge">Engagement</span>
+        <h2>Sustainability & Civic Engagement</h2>
+        <div class="info-box">
+          <h3><i class="fa-solid fa-users"></i> Vie Associative N7</h3>
+          <p>Membre actif de l'association <strong>CAN7</strong> (2ème plus grande association événementielle étudiante de France). Implication dans la logistique, la gestion et l'organisation sécurisée des événements de l'école.</p>
+        </div>
+      </section>
+
+      <!-- Section Sport & Other Activities -->
+      <section id="sport" class="section-card">
+        <span class="badge">Passions</span>
+        <h2>Sport & Other Activities</h2>
+        <div class="grid-2col">
+          <div class="info-box">
+            <h3><i class="fa-solid fa-dumbbell"></i> Sports</h3>
+            <ul>
+              <li><strong>Musculation :</strong> 5 à 6 séances par semaine</li>
+              <li><strong>Course à pied :</strong> 1 séance par semaine</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h3><i class="fa-solid fa-compact-disc"></i> Loisirs</h3>
+            <ul>
+              <li><strong>Mix / DJing :</strong> Pratique et technique audio</li>
+              <li><strong>Lecture :</strong> Littérature et essais</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Career Development -->
+      <section id="career" class="section-card">
+        <span class="badge">Carrière</span>
+        <h2>Career Development</h2>
+        
+        <div class="video-container">
+          <div class="video-placeholder">
+            <i class="fa-solid fa-video"></i>
+            <h3>Vidéo UVP (Elevator Pitch en anglais)</h3>
+            <p>La présentation vidéo de ma Unique Value Proposal sera publiée ici très prochainement.</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <h3><i class="fa-solid fa-address-card"></i> Mes Liens & Contacts</h3>
+          <ul class="contact-list">
+            <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/bousquet-antoine-a207343b2/" target="_blank">Profil LinkedIn</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:antoine.bousquet2@etu.toulouse-inp.fr">antoine.bousquet2@etu.toulouse-inp.fr</a></li>
+            <li><i class="fa-solid fa-file-pdf"></i> CVs (FR / EN) — <em>En cours de mise en ligne</em></li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Onglet 6: Career Development -->
-    <section id="career" class="card">
-      <h2>Career Development</h2>
-      
-      <div class="info-block">
-        <h3>Vidéo UVP (Elevator Pitch)</h3>
-        <div class="video-placeholder">
-          <p>🎬 <strong>Vidéo UVP (Elevator Pitch - English) — En cours d'intégration</strong></p>
-          <p>La vidéo présentant ma Unique Value Proposal sera publiée ici très prochainement.</p>
-        </div>
-      </div>
+    </main>
 
-      <div class="info-block">
-        <h3>Livrables & Documents Professionnels</h3>
-        <ul class="links-list">
-          <li><strong>CV Français / Anglais :</strong> <em>En cours de mise en ligne</em></li>
-          <li><strong>Profil LinkedIn :</strong> <a href="https://www.linkedin.com/in/bousquet-antoine-a207343b2/" target="_blank" rel="noopener">Consulter mon profil LinkedIn</a></li>
-          <li><strong>Contact :</strong> <a href="mailto:antoine.bousquet2@etu.toulouse-inp.fr">antoine.bousquet2@etu.toulouse-inp.fr</a></li>
-        </ul>
-      </div>
-    </section>
-
-  </main>
+  </div>
 
 </body>
 </html>
