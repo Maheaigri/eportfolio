@@ -465,3 +465,21 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.btn-download {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent-color);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-align: center;
+  border: 1px solid var(--accent-color);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-download:hover {
+  background: var(--accent-color);
+  color: white;
+}
